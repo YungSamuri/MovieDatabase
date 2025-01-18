@@ -1,0 +1,65 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+    background-color: white;
+    border-radius: 5% / 3%;
+    min-width: 15rem;
+    max-width: 15rem;
+    box-shadow: .3rem .3rem .5rem black;
+    overflow: hidden;
+    padding-bottom: .5rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    text-wrap: balance;
+    text-align: center;
+    font-weight: bold;
+    height: 3rem;
+    text-shadow: none;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    overflow: hidden;
+    box-shadow: .1rem .1rem .3rem black;
+}
+
+img {
+    width: 15rem;
+    transition: transform 0.3s ease
+}
+
+.big-img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease
+}
+
+.info-div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    text-shadow: none;
+}
+
+.date {
+    font-size: 1.1rem;
+    text-shadow: none;
+}

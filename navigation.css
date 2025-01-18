@@ -1,0 +1,137 @@
+body {
+    background-color: #1e1e1e;
+    font-family: arial;
+    text-shadow: .3rem .3rem .5rem black;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #052276;
+    color: white;
+    padding: 0rem;
+    height: 6rem;
+    box-shadow: 0rem .3rem .5rem black;
+    z-index: 2;
+}
+
+.side {
+    width: 5rem;
+}
+
+#menu-button {
+    width: 6rem;
+    height: 6rem;
+    background-color: #052276;
+    color: white;
+    border: none;
+}
+
+#menu-button:hover {
+    background-color: #4ECDC4;
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -20rem;
+    top: 6rem;
+    width: 15rem;
+    box-shadow: .3rem .3rem .5rem black;
+    text-shadow: none;
+    transition: left 0.3s ease;
+    z-index: 3;
+}
+
+#drawer[data-open="true"] {
+    left: 0px;
+    transition: left 0.3s ease;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #AEF3E7;
+    color: black;
+    border-top: black solid 1px;
+    height: 3rem;
+    padding-left: 1rem;
+    transition: letter-spacing 0.3s ease;
+}
+
+#current-link {
+    background-color:#4ECDC4;
+    color: black;
+    font-weight: bold;
+}
+
+#current-link:hover {
+    cursor: default;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  transition: font 0.3s ease, font-variation-settings 0.3s ease;
+}
+
+.material-symbols-outlined.menu {
+    font-size: 40px;
+    font-variation-settings: 'OPSZ' 40;
+    transition: font 0.3s ease, font-variation-settings 0.3s ease;
+
+}
+
+.material-symbols-outlined.menu.bigger{
+    font-size: 48px;
+    font-variation-settings: 'OPSZ' 48;
+    transition: font 0.3s ease, font-variation-settings 0.3s ease;
+}
+
+.material-symbols-outlined.filled{
+    font-variation-settings:
+    'FILL' 1;
+    transition: font-variation-settings 0.3s ease;
+}
+
+.material-symbols-outlined.big.filled{
+    font-variation-settings:
+    'FILL' 1;
+    transition: font-variation-settings 0.3s ease;
+}
+
+.wide-text {
+    letter-spacing: .2rem;
+    transition: letter-spacing 0.3s ease;
+}
+
+.spacer {
+    height: 1rem;
+    margin-bottom: 9rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+    gap: 4rem;
+}

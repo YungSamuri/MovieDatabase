@@ -1,0 +1,147 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    background-color: #058C42;
+    padding: .5rem;
+    margin: 0rem 30rem;
+    border-radius: 5% / 50%;
+    box-shadow: .3rem .3rem .5rem black;
+}
+
+#wrapper {
+    display: flex;
+    gap: 1rem;
+    margin: 3rem 20rem;
+    background-color: #c33c55dc;
+    box-shadow: .3rem .3rem .5rem black;
+    padding: 1rem;
+}
+
+#main-poster {
+    box-shadow: .3rem .3rem .5rem black;
+    margin-right: 3rem;
+    height: 25rem;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: white;
+    /* #aef3e8d0 */
+    padding: 1rem;
+    gap: 3rem;
+    text-shadow: .3rem .3rem .5rem #1e1e1e;
+    font-size: 1.5rem;
+}
+
+#vote-average {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#carousel-div {
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+    height: 22rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#fade-left {
+    position: absolute;
+    left: 0px;
+    width: 3rem;
+    height: 100%;
+    background-image: linear-gradient(to left, 
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0.9)
+    100%);
+    z-index: 1;
+}
+
+#carousel-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+    /* animation: slide 21s linear; */
+}
+
+.carousel-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 15rem;
+    /* height: auto; */
+}
+
+#fade-right {
+    position: absolute;
+    right: 0px;
+    width: 3rem;
+    height: 100%;
+    background-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0.9)
+    100%);
+    z-index: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-105rem);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -105rem;
+    }
+}
+#credits-header {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: #C33C54;
+    color: white;
+    border-radius: 3% / 50%;
+    margin: 3rem 1rem;
+    font-weight: bold;
+    box-shadow: .3rem .3rem .5rem black;
+}
+
+.name {
+    font-size: 1.25rem;
+    text-shadow: none;
+}
+
+.character {
+    text-shadow: none;
+    font-size: 1.1rem;
+    text-wrap: balance;
+}
